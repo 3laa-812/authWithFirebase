@@ -1,9 +1,9 @@
-import React from 'react'
-import { Alert, Button, Card } from 'react-bootstrap';
-import useAuth from '../context/useAuth';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Alert, Button, Card } from "react-bootstrap";
+import useAuth from "../context/useAuth";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const { currentUser, logOut } = useAuth();
@@ -33,9 +33,11 @@ const Dashboard = () => {
           </Link>
         </Card.Body>
       </Card>
-      <Button className="mt-3 btn btn-primary" onClick={handleLogout}>
-        Log Out
-      </Button>
+      <div className="w-100 text-center mt-2">
+        <Button className="btn btn-primary" onClick={handleLogout}>
+          Log Out
+        </Button>
+      </div>
     </>
   );
 };
