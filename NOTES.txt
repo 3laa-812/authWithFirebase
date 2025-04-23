@@ -1,6 +1,0 @@
--- we make local environment variable to protect firebase data
-
-*pronlem: when we try to imporm from environment variable he cant import with proccess keyword beccause we use vite
-to solve that we use import.meta to match global vars
-*pronlem: when we render the app he still loading and dosent show anything
-i wrap the app component (with <App></App>) <= this error
